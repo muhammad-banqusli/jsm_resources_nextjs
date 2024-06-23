@@ -34,7 +34,6 @@ export default async function Home({ searchParams }: Props) {
                 (searchParams?.category && (
                     <section className="flex-center mt-6 w-full flex-col">
                         <Header
-                            type="resources"
                             query={searchParams?.query || ""}
                             category={searchParams?.category || ""}
                         />

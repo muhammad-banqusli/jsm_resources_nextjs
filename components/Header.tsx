@@ -1,10 +1,9 @@
 interface PropTypes {
-    type: string;
     query: string;
     category: string;
 }
 
-export default function Header({ type, query, category }: PropTypes) {
+export default function Header({ query, category }: PropTypes) {
     if (category && query) {
         return (
             <h1 className="heading3 self-start text-white-800">
@@ -21,7 +20,7 @@ export default function Header({ type, query, category }: PropTypes) {
             </h1>
         );
     }
-    
+
     if (category) {
         return (
             <h1 className="heading3 self-start text-white-800">
