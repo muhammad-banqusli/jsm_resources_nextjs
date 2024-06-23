@@ -63,7 +63,7 @@ export default async function Home({ searchParams }: Props) {
                     </h1>
                     <div className="mt-12 flex w-full flex-wrap justify-center gap-16 sm:justify-start">
                         {item.resources?.length > 0 ? (
-                            resources.map((resource: any) => (
+                            item.resources.map((resource: any) => (
                                 <ResourceCard
                                     key={resource._id}
                                     resource={resource}
